@@ -41,7 +41,7 @@ El mural es una representación simbólica del modelo OSI (Open Systems Intercon
 
 ### TCP/IP vs OSI
 
-![Ejercicio2](Ejercicio2.png)
+![Ejercicio2](ExamenRedes/Ejercicio2.png)
 
 - **TCP/IP**  
   Consta de 4 capas (Acceso a la Red, Internet, Transporte y Aplicación). Es un conjunto de protocolos prácticos y probados que sustentan la Internet moderna, combinando funciones que en OSI están separadas.
