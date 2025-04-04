@@ -181,5 +181,23 @@ En este ejercicio se recrea la antigua conexión entre dos ciudades (reinos) que
 
 ## La Ciudad de las Redes Aisladas
 
+### Introducción
+Este ejercicio consiste en revivir la arquitectura de una antigua metrópolis segmentada en gremios. Cada gremio operaba en su propio "canal sagrado" de comunicaciones, aislando el tráfico entre ellos. Se implementa la segmentación de redes mediante VLANs y un router-on-a-stick que permite la intercomunicación controlada entre las diferentes VLANs.
 
+### Objetivos
+- **Topología VLAN:**
+  - Configurar un switch central que soporte VLANs.
+  - Crear al menos dos VLANs, por ejemplo:
+    - **VLAN 10:** Gremio de los Arquitectos.
+    - **VLAN 20:** Gremio de los Escribas.
+  - Asignar puertos de acceso para los PCs de cada gremio.
+
+- **Router-on-a-Stick:**
+  - Conectar un router (la Gran Torre Central) al switch mediante un enlace troncal (trunk).
+  - Configurar subinterfaces en el router para cada VLAN:
+    - Subinterfaz para VLAN 10 
+    - Subinterfaz para VLAN 20 
+
+### Archivos de Entrega
+- **Archivo Packet Tracer:** `E2.pkt`
 ---
