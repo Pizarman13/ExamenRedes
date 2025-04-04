@@ -10,6 +10,7 @@ https://github.com/Pizarman13/ExamenRedes.git
 4. [La Encrucijada de las Rutas](#la-encrucijada-de-las-rutas)
 5. [El Guardián de la Máscara Única](#el-guardian-de-la-mascara-unica)
 6. [Ejercicio 1: La Ruta Perdida entre Dos Reinos](#la-ruta-perdida-entre-dos-reinos)
+7. [Ejercicio 2: La Ciudad de las Redes Aisladas](#la-ciudad-de-las-redes-aisladas)
 
 ---
 
@@ -139,3 +140,46 @@ Este concepto se refiere al **Network Address Translation (NAT)**, en particular
 ---
 
 ## La Ruta Perdida entre Dos Reinos
+
+### Introducción
+En este ejercicio se recrea la antigua conexión entre dos ciudades (reinos) que quedaron aisladas tras el olvido de la "Ruta Sagrada de Datos". La solución consiste en interconectar dos redes locales mediante routers, switches y un enlace WAN, de manera que los habitantes (PCs) de cada ciudad puedan comunicarse nuevamente.
+
+### Objetivos
+- **Topología:**
+  - Dos routers (uno en cada ciudad) conectados a un switch local.
+  - PCs conectados a cada switch (mínimo 1 PC por ciudad; se recomienda 2 para pruebas adicionales).
+  - Enlace directo entre los routers (puede ser cable serial o cable cruzado, simulando la ruta desértica).
+
+- **Configuración de Routing:**
+  - En **Router A:**  
+    ```plaintext
+    ip route 192.168.20.0 255.255.255.0 192.168.30.2
+    ```
+  - En **Router B:**  
+    ```plaintext
+    ip route 192.168.10.0 255.255.255.0 192.168.30.1
+    ```
+  - Alternativamente, se pueden configurar rutas por defecto si se prefiere.
+
+- **Pruebas de Conectividad:**
+  - Realizar `ping` desde un PC en Ciudad A a un PC en Ciudad B y viceversa para confirmar que el enlace WAN está funcionando correctamente.
+
+### Topología y Dispositivos Utilizados
+- **Routers:**  
+  - Cisco 1841, con interfaces FastEthernet para LAN y Serial (o FastEthernet/GigabitEthernet para enlace WAN).
+- **Switches:**  
+  - Cisco 2960, ubicado en cada ciudad.
+- **PCs:**  
+  - Mínimo 1 por ciudad.
+- **Enlace WAN:**  
+  - Conexión directa entre routers mediante cable serial (configurando DCE/DTE) o cable cruzado en interfaces Ethernet.
+
+### Archivos de Entrega
+- **Archivo Packet Tracer:** `E1.pkt`
+
+---
+
+## La Ciudad de las Redes Aisladas
+
+
+---
