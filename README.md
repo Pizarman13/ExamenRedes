@@ -67,7 +67,7 @@ El mural es una representación simbólica del modelo OSI (Open Systems Intercon
 
 ## Los Dos Pergaminos del Mensajero
 
-![Ejercicio2](ExamenRedes/Ejercicio2.png) (Imagen adjuntada en los archivos (Ejercicio2.png)(No se porque no se redirige, perdon))
+[![Ejercicio2](Ejercicio2.png)](Ejercicio2.png)
 
 ### TCP (Mensajero Confiable)
 
