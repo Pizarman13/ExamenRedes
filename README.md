@@ -44,6 +44,23 @@ El mural es una representación simbólica del modelo OSI (Open Systems Intercon
 - **Complementariedad**  
   Mientras OSI ayuda a entender el proceso de comunicación de forma conceptual, TCP/IP lo implementa de manera efectiva en la práctica.
 
+  Modelo OSI (7 capas)               Modelo TCP/IP (4 capas)
++-----------------------+           +-----------------------+
+| 7. Aplicación         |           | 4. Aplicación         |
++-----------------------+           +-----------------------+
+| 6. Presentación       |           |                       | <-- Se agrupan en la capa de
++-----------------------+           |                       |     Aplicación en TCP/IP
+| 5. Sesión             |           |                       |
++-----------------------+           +-----------------------+
+| 4. Transporte         |           | 3. Transporte         |
++-----------------------+           +-----------------------+
+| 3. Red                |           | 2. Internet           |
++-----------------------+           +-----------------------+
+| 2. Enlace de Datos    |           | 1. Acceso a la Red    | <-- Equivale a Enlace de Datos
++-----------------------+           |                       |     + Física del modelo OSI
+| 1. Física             |           +-----------------------+
++-----------------------+
+
 ---
 
 ## Los Dos Pergaminos del Mensajero
