@@ -9,6 +9,7 @@ https://github.com/Pizarman13/ExamenRedes.git
 3. [El Enigma de las Subredes](#el-enigma-de-las-subredes)
 4. [La Encrucijada de las Rutas](#la-encrucijada-de-las-rutas)
 5. [El Guardián de la Máscara Única](#el-guardian-de-la-mascara-unica)
+6. [Ejercicio 1: La Ruta Perdida entre Dos Reinos](#la-ruta-perdida-entre-dos-reinos)
 
 ---
 
@@ -132,3 +133,7 @@ Este concepto se refiere al **Network Address Translation (NAT)**, en particular
 
 - Permite que muchas máquinas compartan una única dirección IP pública, algo fundamental debido a la limitación del espacio IPv4.
 - Incrementa la seguridad, ya que al ocultar las direcciones internas, reduce la exposición de la red a posibles ataques.
+
+---
+
+## La Ruta Perdida entre Dos Reinos
